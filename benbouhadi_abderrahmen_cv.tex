@@ -1,0 +1,126 @@
+% !TEX program = pdflatex
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\usepackage{graphicx}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{paracol}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{setspace}
+
+\definecolor{primary}{HTML}{0A3C6E}
+\definecolor{textgray}{HTML}{3A3A3A}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=primary,
+    linkcolor=primary
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+\setlength{\columnsep}{1.1cm}
+
+\newcommand{\cvsection}[1]{\vspace{0.6em}\noindent{\bfseries\textcolor{primary}{#1}}\\[-0.2em]\textcolor{primary}{\rule{\linewidth}{0.5pt}}\\[0.2em]}
+\newcommand{\cventry}[4]{\textbf{#1} \hfill \textit{#2}\\\textcolor{textgray}{#3}\\#4\par}
+
+\begin{document}
+
+\begin{center}
+\begin{minipage}[t]{0.68\linewidth}
+    {\Huge\bfseries BENBOUHADI ABDERRAHMEN}\\[0.5em]
+    {\large Ing\'enieur en G\'enie Logistique et Transport}\\[0.25em]
+    \textcolor{textgray}{\href{mailto:dorinmedo02@gmail.com}{dorinmedo02@gmail.com} $\mid$ Hay Meddahi, Chlef, Alg\'erie $\mid$ +213\,556\,526\,365}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.28\linewidth}
+    \raggedleft\includegraphics[width=3.2cm]{src/ann/abderrahmen-photo.jpg}
+\end{minipage}
+\end{center}
+
+\vspace{0.4cm}
+
+\begin{paracol}{2}
+\sloppy
+
+% Left column
+\cvsection{PROFIL}
+Ing\'enieur sp\'ecialis\'e en g\'enie logistique et transport, passionn\'e par l\'optimisation des cha\^ines d\'approvisionnement et la transformation digitale des organisations. Capacit\'e \`a analyser les flux, mod\'eliser les processus et conduire des projets techniques multidisciplinaires.
+
+\cvsection{INFORMATIONS}
+\begin{itemize}
+    \item Mobilit\'e : Alg\'erie (Chlef, Alger)
+    \item T\'el\'ephone : +213\,556\,526\,365
+    \item Courriel : \href{mailto:dorinmedo02@gmail.com}{dorinmedo02@gmail.com}
+\end{itemize}
+
+\cvsection{COMP\'ETENCES TECHNIQUES}
+\textbf{Programmation} : Python, C, R, Go, HTML, CSS, JavaScript, React JS, Flutter, Node.js, Django\\
+\textbf{Bases de donn\'ees} : MySQL, PostgreSQL, MongoDB, Firebase\\
+\textbf{Logiciels} : MS Project, RStudio, PyCharm, GUSEC Arena, TransCAD, MapInfo, SUMO\\
+\textbf{Bureautique} : LaTeX, Pack Office
+
+\cvsection{LANGUES}
+\begin{itemize}
+    \item Fran\c{c}ais : TCF B2
+    \item Anglais : Niveau interm\'ediaire
+    \item Arabe : Langue maternelle
+\end{itemize}
+
+\cvsection{SOFT SKILLS}
+\begin{itemize}
+    \item Bonne communication \& leadership
+    \item Gestion du temps et des priorit\'es
+    \item Travail en \'equipe et networking
+    \item Adaptation et volont\'e d'apprendre
+    \item Gestion de projet orient\'ee r\'esultats
+\end{itemize}
+
+\cvsection{CENTRES D'INT\'ER\^ET}
+Sport (football, gym, calisthenics)\\
+Tourisme d'aventure
+
+\switchcolumn
+
+% Right column
+\cvsection{\'EDUCATION}
+\cventry{Ing\'enieur en G\'enie Logistique et Transport}{2022 -- 2025}{ENSTA, Dergana (Alger)}{Dipl\^ome obtenu en 2025. Cours principaux : transport, planification, pr\'evision, analyse de donn\'ees.}
+
+\cventry{Concours National d'Acc\`es aux \'Ecoles d'Ing\'enieurs}{Juin 2022}{Dergana, Alg\'erie}{928\`eme place nationale.}
+
+\cventry{Classes Pr\'eparatoires en Sciences et Technologies}{2020 -- 2022}{ENSTA, Dergana (Alger)}{Cours : analyse, physique, statistiques/probabilit\'es, informatique.}
+
+\cvsection{EXP\'ERIENCE}
+\cventry{Webscale}{Oct. 2025 -- pr\'esent}{Full Stack Developer}{Design et d\'eveloppement d'une plateforme SaaS en Go (backend) et React/TypeScript (frontend) avec int\'egration Cloud.}
+
+\cventry{NAFTAL}{D\'ec. 2022}{Stagiaire, d\'epartement d'exp\'edition -- Chlef}{Immersion dans la gestion de l'exp\'edition et du transport.}
+
+\cventry{GROUPE LOGITRANS}{Mars 2023}{Stagiaire, d\'epartement d'exploitation -- Chlef}{Contribution \`a l'optimisation et \`a la gestion des stocks.}
+
+\cventry{Direction de transport}{F\'ev. 2024}{Stagiaire, d\'epartement commercial -- Chlef}{Missions orient\'ees service client et pilotage des flux.}
+
+\cventry{D\'eveloppeur Freelance}{2023 -- pr\'esent}{Web \& mobile}{R\'ealisation de projets pour divers clients (applications web/mobile).}
+
+\cvsection{PROJETS}
+\cventry{Plateforme Event System Manager}{2025}{Webscale}{Back-end en Go, front-end en React JS/TypeScript pour la gestion des \'ev\'enements et la supervision op\'erationnelle.}
+
+\cventry{Projet de Fin d'\'Etudes : Speedy}{2024}{Application de livraison tout-en-un}{Solution Flutter + Firebase + JavaScript pour la gestion des commandes, l'attribution intelligente et le suivi en temps r\'eel.}
+
+\cventry{Autres projets freelance}{2023 -- pr\'esent}{Boutiques en ligne \& outils divers}{Conception d'exp\'eriences e-commerce et d'outils de suivi.}
+
+\cventry{Projet S\'eminaire}{2022}{Enqu\^ete de transport}{Analyse des flux et recommandations d'am\'elioration.}
+
+\cvsection{ACTIVIT\'ES ASSOCIATIVES}
+\cventry{Club Sportif ENSTA}{2022 -- pr\'esent}{Pr\'esident}{Organisation d'activit\'es sportives \`a l'\'echelle de l'\'ecole.}
+
+\cventry{Club Scientifique GDSC}{2022 -- 2023}{Organisateur d'\'ev\'enements}{Coordination de workshops tech et conf\'erences.}
+
+\cventry{Club Scientifique ENSTEINS}{2020 -- 2024}{Membre actif}{Animation communautaire et partage de veille technologique.}
+
+\end{paracol}
+
+\end{document}
